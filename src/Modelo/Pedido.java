@@ -1,11 +1,21 @@
 package Modelo;
 public class Pedido {
+    
+    private int id_pedido;
     private int codigo_producto;
     private int codigo_proveedor;
-    private int codigo_sucursal;
+    private String sucursal;
     private String tipo_producto;
     private int cantidad;
 
+    public int getId_pedido() {
+        return id_pedido;
+    }
+
+    public void setId_pedido(int id_pedido) {
+        this.id_pedido = id_pedido;
+    }       
+    
     public int getCodigo_producto() {
         return codigo_producto;
     }
@@ -22,12 +32,12 @@ public class Pedido {
         this.codigo_proveedor = codigo_proveedor;
     }
 
-    public int getCodigo_sucursal() {
-        return codigo_sucursal;
+    public String getCodigo_sucursal() {
+        return sucursal;
     }
 
-    public void setCodigo_sucursal(int codigo_sucursal) {
-        this.codigo_sucursal = codigo_sucursal;
+    public void setCodigo_sucursal(String sucursal) {
+        this.sucursal = sucursal;
     }
 
     public String getTipo_producto() {
@@ -44,7 +54,6 @@ public class Pedido {
 
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
-    }
-    
+    }   
     
 }

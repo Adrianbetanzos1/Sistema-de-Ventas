@@ -1,8 +1,8 @@
 package sistemacompras;
-import Vistas.VistaPedido;
+import Vistas.VistaIniciarSesion;
+
 public class SistemaCompras {
     public static void main(String[] args) {
-        VistaPedido.main(args);
-    }
-    
+        VistaIniciarSesion.main(args);
+    }    
 }
